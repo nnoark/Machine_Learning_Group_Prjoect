@@ -15,7 +15,7 @@
     <!-- navigation bar -->
     <nav class="navbar navbar-dark bg-dark navbar-1 white">
         <!-- page title -->
-        <a class="navbar-brand" href="index.html">
+        <!-- <a class="navbar-brand" href="/"> -->
             <h1>Great Lakes Rent Estimator</h1>
     </nav>
 
@@ -25,7 +25,8 @@
         <p class="col-md-12" style="color: black;">Enter the amenities of your rental to estimate monthly rent.</p>
         <div class="col-md-12">
             <h3>State</h3>
-            <select name="dropdown" id="selState">
+            <form name="state" action="/">
+            <select name="states" id="selState">
                 <option value="ohio">Ohio</option>
                 <option value="wisconsin">Wisconsin</option>
                 <option value="michigan">Michigan</option>
@@ -35,16 +36,12 @@
                 <option value="new york">New York</option>
                 <option value="indiana">Indiana</option>
             </select>
+        </form>
         </div>
-        <div class="col-md-12">
-            <!-- this needs to be conditional on state -->
-            <h3>region</h3>
-            <select name="dropdown" id="selRegion">
-                <option value="~~region~~">~~region~~</option>
-            </select>
-        </div>
+      
         <div class="col-md-12">
             <h3>Type</h3>
+            <form name="type" action="/">
             <select name="dropdown" id="selType">
                 <option value="apartment">Apartment</option>
                 <option value="house">House</option>
@@ -57,9 +54,11 @@
                 <option value="loft">Loft</option>
                 <option value="flat">Flat</option>
             </select>
+        </form>
         </div>
         <div class="col-md-12">
             <h3>Square Footage</h3>
+            <form name="sqft" action="/">
             <select name="dropdown" id="selSqFt">
                 <option value="100to500">100-500</option>
                 <option value="501to1000">501-1000</option>
@@ -68,9 +67,11 @@
                 <option value="3001to4000">3001-4000</option>
                 <option value="4001to5000">4001-5000</option>
             </select>
+        </form>
         </div>
         <div class="col-md-12">
             <h3>Bedrooms</h3>
+            <form name="bedroom" action="/">
             <select name="dropdown" id="selBedrooms">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -81,12 +82,14 @@
                 <option value="7">7</option>
                 <option value="8">8</option>
             </select>
+        </form>
         </div>
         <div class="col-md-12">
             <h3>Bathrooms</h3>
+            <form name="bathroom" action="/">
             <select name="dropdown" id="selBathrooms">
                 <option value="1">1</option>
-                <option value=:1.5">1.5</option>
+                <option value="1.5">1.5</option>
                 <option value="2">2</option>
                 <option value="2.5">2.5</option>
                 <option value="3">3</option>
@@ -97,43 +100,55 @@
                 <option value="5.5">5.5</option>
                 <option value="6">6</option>
             </select>
+        </form>
         </div>
         <div class="col-md-12">
             <h3>Cats Allowed?</h3>
+            <form name="cats" action="/">
             <select name="dropdown" id="selCats">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
+        </form>
         </div>
         <div class="col-md-12">
             <h3>Dogs Allowed?</h3>
+            <form name="dogs" action="/">
             <select name="dropdown" id="selDogs">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
+        </form>
         <div class="col-md-12">
             <h3>Smoking Allowed?</h3>
+            <form name="smoking" action="/">
             <select name="dropdown" id="selSmoking">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
+        </form>
         </div>
         <div class="col-md-12">
             <h3>Wheelchair Accessible?</h3>
+            <form name="wheelchair" action="/">
             <select name="dropdown" id="selWheelchair">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
+        </form>
         </div>
         <div class="col-md-12">
             <h3>Electric Car Charger?</h3>
+            <form name="electric" action="/">
             <select name="dropdown" id="selElectricCar">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
+        </form>
         </div>
         <div class="col-md-12">
             <h3>Laundry Options</h3>
+            <form name="laundry" action="/">
             <select name="dropdown" id="selWasherDryer">
                 <option value="inBuilding">Laundry In Building</option>
                 <option value="onSite">Laundry On Site</option>
@@ -141,6 +156,7 @@
                 <option value="hookups">Washer/Dryer Hookups In Unit</option>
                 <option value="inUnit">Washer/Dryer In Unit</option>
             </select>
+        </form>
         </div>
     </div>
 
