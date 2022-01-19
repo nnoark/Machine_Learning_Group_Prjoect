@@ -76,5 +76,14 @@ function region_change() {
 }
 
 function submitButton() {
-    
+
 }
+
+
+// function getOption() {
+//     selectElement = document.querySelector('#select1');
+//     output = selectElement.value;
+//     document.querySelector('.output').textContent = output;
+// }
+
+// function to store sqft input

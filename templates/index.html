@@ -59,7 +59,7 @@
             </form>
         </div>
 
-        <div style="padding: 2%;">
+        <!-- <div style="padding: 2%;">
             <h3>Square Footage</h3>
             <form name="sqft" action="/">
                 <select name="dropdown" id="selSqFt">
@@ -71,6 +71,12 @@
                     <option value="4001to5000">4001-5000</option>
                 </select>
             </form>
+        </div> -->
+
+        <div style="padding: 2%;">
+            <label for="sqft"><h3>Square Footage</h3></label><br>
+            <input type="text" id="sqft" name="sqft" placeholder="Enter square footage">
+            <label for="sqft">ft<sup>2</sup></label>
         </div>
 
         <div style="padding: 2%;">
@@ -92,7 +98,7 @@
         <div style="padding: 2%;">
             <h3>Bathrooms</h3>
             <form name="bathroom" action="/">
-                <select name="dropdown" id="selBathrooms">
+                <select name="dropdown" id="selBathrooms" >
                     <option value="1">1</option>
                     <option value="1.5">1.5</option>
                     <option value="2">2</option>
@@ -109,9 +115,9 @@
         </div>
 
         <div style="padding: 2%;">
-            <h3>Cats Allowed?</h3>
+            <h3>Pets Allowed?</h3>
             <form name="cats" action="/">
-                <select name="dropdown" id="selCats">
+                <select name="dropdown" id="selPets">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
@@ -124,7 +130,7 @@
 
     <div class="row g-2" >
         
-        <div style="padding: 2%;">
+        <!-- <div style="padding: 2%;">
             <h3>Dogs Allowed?</h3>
             <form name="dogs" action="/">
                 <select name="dropdown" id="selDogs">
@@ -132,7 +138,7 @@
                     <option value="no">No</option>
                 </select>
             </form>
-        </div>
+        </div> -->
 
         <div style="padding: 2%;">
             <h3>Smoking Allowed?</h3>
@@ -167,7 +173,7 @@
         <div style="padding: 2%;">
             <h3>Laundry Options</h3>
             <form name="laundry" action="/">
-                <select name="dropdown" id="selWasherDryer">
+                <select name="dropdown" id="selLaundry">
                     <option value="inBuilding">Laundry In Building</option>
                     <option value="onSite">Laundry On Site</option>
                     <option value="none">No Laundry</option>
