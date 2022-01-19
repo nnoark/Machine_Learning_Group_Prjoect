@@ -76,6 +76,7 @@ function region_change() {
 }
 
 function submitButton() {
+    selectState = document.getElementById("selState").value;
 
 }
 
